@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hero style */
+.hero {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.photo {
+    flex-direction: column;
+}
+
+.photo img {
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
