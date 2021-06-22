@@ -20,7 +20,7 @@ body {
 
 /* header/nav style */
 
-header, footer {
+header {
     background-color: var(--secondary-color);
     width: 100%;
     padding: 20px 35px;
@@ -37,7 +37,7 @@ header, footer {
     z-index: 9999;
 }
 
-header h1, footer h1 {
+header h1 {
     font-weight: bolder;
     color: var(--tertiary-color);
     font-size: 40px;
@@ -45,7 +45,7 @@ header h1, footer h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header a, footer a {
+header a {
     text-decoration: none;
     color: var(--tertiary-color);
     font-style: normal;
@@ -54,19 +54,23 @@ header a, footer a {
 header nav ul, footer address ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
-header nav ul li a, footer address ul li a {
+footer address ul {
+    justify-content: center;
+}
+
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav ul li a:hover, footer address ul li a:hover {
+header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
